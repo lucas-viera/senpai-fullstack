@@ -46,7 +46,8 @@ Docente: Gustavo Rodriguez
 
 
 # Puntaje quizzes:
-1- 3 pts
-2- 3 pts
-3-
+1. 3 pts
+2. 3 pts
+3. 3 pts
+4. 
 

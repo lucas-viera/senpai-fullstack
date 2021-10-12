@@ -1,0 +1,27 @@
+
+h2 {
+    color:aquamarine
+}
+
+/*
+Clases creadas por uno. En HTML tienen que ir co class="miClaseParaH2" 
+Empiezan con: .
+*/
+.miClaseParaH2 {
+    color:blueviolet
+}
+
+/*
+pedido del ejercicio
+*/
+.contenedor {
+    background-color: darkorange;
+}
+
+/*
+Identificadores para elementos de estilo unido
+Empiezan con: #
+*/
+#miEstiloUnico {
+    background-color: cornflowerblue;
+}

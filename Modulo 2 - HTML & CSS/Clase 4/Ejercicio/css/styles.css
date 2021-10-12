@@ -4,7 +4,7 @@ h2 {
 }
 
 /*
-Clases creadas por uno. En HTML tienen que ir co class="miClaseParaH2" 
+Clases creadas por uno. En HTML tienen que ir co class="miClaseParaH2"
 Empiezan con: .
 */
 .miClaseParaH2 {
@@ -16,6 +16,12 @@ pedido del ejercicio
 */
 .contenedor {
     background-color: darkorange;
+    margin: 20px;
+}
+
+.header img {
+  width: 300px;
+  height: 100px;
 }
 
 /*

@@ -34,6 +34,10 @@ Docente: Gustavo Rodriguez
 
 ### Clase 4
 
+### Clase 5
+- Unidades en CSS
+- Colores en CSS
+- CSS Box Model 
 
 ## Modulo 3: JavaScript
 
@@ -50,4 +54,9 @@ Docente: Gustavo Rodriguez
 2. 3 pts
 3. 3 pts
 4. 3 pts
-
+5. 3 pts
+6.
+7.
+8.
+9.
+10.

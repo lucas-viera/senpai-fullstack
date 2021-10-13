@@ -3,6 +3,11 @@ h2 {
     color:aquamarine
 }
 
+html, body{
+  padding: 0px;
+  margin: 0px;
+}
+
 /*
 Clases creadas por uno. En HTML tienen que ir co class="miClaseParaH2"
 Empiezan con: .
@@ -15,8 +20,11 @@ Empiezan con: .
 pedido del ejercicio
 */
 .contenedor {
-    background-color: darkorange;
     margin: 20px;
+}
+
+.contenedor-orange{
+  background-color: darkorange;
 }
 
 .header img {

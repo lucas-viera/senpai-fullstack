@@ -39,6 +39,10 @@ Docente: Gustavo Rodriguez
 - Colores en CSS
 - CSS Box Model 
 
+### Clase 6
+- CSS Box Model: border, padding, margin, content
+- FlexBox: align-items
+
 ## Modulo 3: JavaScript
 
 ## Modulo 4: React JS
@@ -55,7 +59,7 @@ Docente: Gustavo Rodriguez
 3. 3 pts
 4. 3 pts
 5. 3 pts
-6.
+6. 3 pts
 7.
 8.
 9.

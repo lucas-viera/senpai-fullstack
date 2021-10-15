@@ -37,7 +37,7 @@ Docente: Gustavo Rodriguez
 ### Clase 5
 - Unidades en CSS
 - Colores en CSS
-- CSS Box Model 
+- CSS Box Model
 
 ### Clase 6
 - CSS Box Model: border, padding, margin, content
@@ -64,3 +64,13 @@ Docente: Gustavo Rodriguez
 8.
 9.
 10.
+
+# Ideas proyecto final:
+- Registros de gastos / listado de gastos
+- Listados de tareas con estados (Realizada, por realizar, pendiente, etc)
+- Registro de calorías consumidas / listado de calorías consumidas
+- Ecommerce de cualquier producto / servicio
+- Blog
+- Web personal
+- Web institucional
+- Encuestas / Quiz

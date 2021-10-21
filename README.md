@@ -43,6 +43,16 @@ Docente: Gustavo Rodriguez
 - CSS Box Model: border, padding, margin, content
 - FlexBox: align-items
 
+### Clase 7
+- Repaso a href dentro del mismo html
+- CSS background-image
+- Repaso CSS FlexBox
+- flex-direction
+- flex-wrap
+- flex-grow
+- flex-shrink
+
+
 ## Modulo 3: JavaScript
 
 ## Modulo 4: React JS
@@ -60,7 +70,7 @@ Docente: Gustavo Rodriguez
 4. 3 pts
 5. 3 pts
 6. 3 pts
-7.
+7. 2 pts
 8.
 9.
 10.

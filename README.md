@@ -71,7 +71,7 @@ Docente: Gustavo Rodriguez
 5. 3 pts
 6. 3 pts
 7. 2 pts
-8.
+8. 3 pts
 9.
 10.
 

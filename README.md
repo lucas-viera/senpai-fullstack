@@ -7,7 +7,7 @@ Docente: Gustavo Rodriguez
 3. JavaScript
 4. ReactJS
 5. Node.js + Express
-6. MongoDB
+6. MongoDB & PostgreSQL
 
 # Fechas de entregas
 1.  07/noviembre/2021
@@ -52,6 +52,9 @@ Docente: Gustavo Rodriguez
 - flex-grow
 - flex-shrink
 
+### Clase 8
+- CSS Grid
+
 
 ## Modulo 3: JavaScript
 
@@ -64,6 +67,7 @@ Docente: Gustavo Rodriguez
 
 
 # Puntaje quizzes:
+## Modulo 1
 1. 3 pts
 2. 3 pts
 3. 3 pts
@@ -72,8 +76,8 @@ Docente: Gustavo Rodriguez
 6. 3 pts
 7. 2 pts
 8.
-9.
-10.
+
+
 
 # Ideas proyecto final:
 - Registros de gastos / listado de gastos

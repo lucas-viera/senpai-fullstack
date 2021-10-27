@@ -1,0 +1,4 @@
+Cuando se levanta en un
+@media (min-width: 800px) and (max-width: 1980){
+
+}

@@ -87,10 +87,11 @@ Docente: Gustavo Rodriguez
 4. 3 pts
 5. 3 pts
 6. 3 pts
-7. 2 pts
-8. 3 pts
+7.
+8. 2 pts
 9. 3 pts
-10.
+10. 3 pts
+
 
 # Ideas proyecto final:
 - Registros de gastos / listado de gastos

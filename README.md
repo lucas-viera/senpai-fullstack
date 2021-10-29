@@ -56,6 +56,15 @@ Docente: Gustavo Rodriguez
 - CSS Grid
 
 
+### Clase 9
+- CSS Grid
+- Media queries
+
+### Clase 10
+- Pseudoclases: hover, active, focus, focus-within, target, visited, focus-visible, checked y +40
+- Transiciones: transition, transition-duration, transition-timing-function, transition-delay
+- Selectores
+
 ## Modulo 3: JavaScript
 
 ## Modulo 4: React JS
@@ -74,10 +83,10 @@ Docente: Gustavo Rodriguez
 4. 3 pts
 5. 3 pts
 6. 3 pts
-7. 2 pts
-8. 3 pts
-9.
-10.
+7. 
+8. 2 pts
+9. 3 pts
+10. 3
 
 # Ideas proyecto final:
 - Registros de gastos / listado de gastos
@@ -85,6 +94,6 @@ Docente: Gustavo Rodriguez
 - Registro de calorías consumidas / listado de calorías consumidas
 - Ecommerce de cualquier producto / servicio
 - Blog
-- Web personal
+- *Web personal*
 - Web institucional
 - Encuestas / Quiz

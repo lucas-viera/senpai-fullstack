@@ -1,0 +1,76 @@
+:root {
+--font-family: sans-serf;
+--primary-color: rgb(71, 86,);
+--secondary-color: #ff7235;
+
+/*--normal-font: 400;
+--bold-font: 700;
+--bolder-font: 900;
+--bg-color: #fcfcfc;
+--primary-shadow: #8b8eaf;
+--secondary-shadow: #a17a69;
+--bottom-margin: 0.5rem;
+--bottom-margin-2: 1rem;
+--line-height: 1.7rem;
+--transition: 0.3s;
+*/
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*
+CSS Resets
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+header {
+  background-color: rgb(200, 227, 212);
+  padding: 1%;
+}
+
+body {
+  background-color: rgb(246, 234, 190);
+}
+
+h1 {
+  font-variant-caps: small-caps;
+}
+
+cite {
+  font-style: italic;
+  font-family: monospace;
+}
+
+#backgr-verde {
+  background-color: rgb(200, 227, 212);
+}
+
+
+/*
+Ejemplos de paleta de colores
+*/
+.amarillo {
+  background-color: rgb(246, 215, 167);
+}
+
+.amarillo-clarito {
+  background-color: rgb(246, 234, 190);
+}
+
+.verde {
+  background-color: rgb(200, 227, 212);
+}
+.verde-clarito {
+  background-color: rgb(135, 170, 170);
+}

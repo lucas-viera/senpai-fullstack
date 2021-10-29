@@ -55,6 +55,12 @@ Docente: Gustavo Rodriguez
 ### Clase 8
 - CSS Grid
 
+### Clase 9
+- CSS Flex vs CSS Grid
+- Grid template areas
+- Media Queries
+
+
 
 ### Clase 9
 - CSS Grid
@@ -73,8 +79,6 @@ Docente: Gustavo Rodriguez
 
 ## Modulo 6: Base de datos (MongoDB & PostgreSQL)
 
-
-
 # Puntaje quizzes:
 ## Modulo 1
 1. 3 pts
@@ -83,10 +87,10 @@ Docente: Gustavo Rodriguez
 4. 3 pts
 5. 3 pts
 6. 3 pts
-7. 
-8. 2 pts
+7. 2 pts
+8. 3 pts
 9. 3 pts
-10. 3
+10.
 
 # Ideas proyecto final:
 - Registros de gastos / listado de gastos

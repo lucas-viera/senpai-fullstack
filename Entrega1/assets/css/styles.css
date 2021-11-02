@@ -1,28 +1,24 @@
 :root {
---font-family: sans-serf;
---primary-color: rgb(71, 86,);
---secondary-color: #ff7235;
-
-/*--normal-font: 400;
---bold-font: 700;
---bolder-font: 900;
---bg-color: #fcfcfc;
---primary-shadow: #8b8eaf;
---secondary-shadow: #a17a69;
---bottom-margin: 0.5rem;
---bottom-margin-2: 1rem;
---line-height: 1.7rem;
---transition: 0.3s;
-*/
+  --font-family:"Roboto", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #fefefe;
+  --primary-color: #11324D;
+  --secondary-color: #6B7AA1;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #C1CFC0;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-/*
-CSS Resets
-*/
+/* CSS Resets */
 * {
   margin: 0;
   padding: 0;
@@ -33,44 +29,195 @@ ul {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
 
-header {
-  background-color: rgb(200, 227, 212);
-  padding: 1%;
+a:hover {
+  color: var(--secondary-color)
 }
 
 body {
-  background-color: rgb(246, 234, 190);
+  font-family: var(--font-family);
 }
 
-h1 {
-  font-variant-caps: small-caps;
+/* Nav bar style */
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;     /*Value of 1 makes sure the nav var displays over any other element?*/
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  padding: 1rem 3.5rem;
+  background-color: var(--bg-color);
+  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+nav h1 {
+  color: var(--primary-color);
+}
+nav a {
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+nav a:hover {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
+nav ul {
+  display: flex;  /*Flexbox used to show ul items inline*/
+  gap: 1.9rem;
+}
+nav ul li {
+  font-weight: var(--bold-font);
 }
 
-cite {
-  font-style: italic;
-  font-family: monospace;
+/*Burger menu button*/
+.burger-menu-btn {
+  color: var(--primary-color);
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;    /*Buger menu button will be hidden by default and visible on mobile*/
 }
 
-#backgr-verde {
-  background-color: rgb(200, 227, 212);
+/* About me section styles */
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 68.75rem;
+  margin: auto;
+}
+
+.profile img {
+  height: 15rem;
+  width: 15rem;
+}
+
+/* Media queries */
+
+@media (min-width: 400px) and (orientation: portrait) {
+  .profile img{
+    height: 5rem;
+    width: 5rem;
+  }
+  .burger-menu-btn {
+    display: inline;   
+  }
+  nav ul li {
+    display: none;
+  }
+}
+
+.bio {
+  width: 25rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  margin-bottom: var(--bottom-margin);
+    border-bottom: 2px solid var(--secondary-color);
+
+}
+
+.bio h1 {
+  margin-bottom: var(--bottom-margin);
+}
+
+.bio p {
+  line-height: var(--line-height);
+  padding: 0.3rem 0;
+}
+
+.about-me {
+  background-color: var(--bg-color);
+  padding: 1rem 6rem;
+}
+
+.about-me h2 {
+  margin-bottom: var(--bottom-margin);
+  text-align: center;
+}
+
+.about-me p {
+  text-align: left;
+  line-height: var(--line-height);
+  padding: 0.4rem;
+  margin-left: 10rem;   /*TODO: How to center but keep it left-aligned ??*/
+}
+
+/* Skills section */  /* TODO: CSS GRID ??*/
+.skills {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.skill-header {
+  margin-bottom: 1rem;
+}
+
+.skills-wrapper img {
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.icon {
+  /* width: 11.875rem; */
+  height: 11.25rem;
+  text-align: center;
+}
+
+.icon-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 5px var(--primary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
+
+.icon-card:hover {
+  cursor:pointer;
+}
+
+/* Footer */
+footer {
+  background-color: var(--bg-color);
+  padding: 1.25rem;
+  text-align: center;
+  margin: 2rem 0 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  transition: color 0.3s ease;
+  color: var(--primary-color);
+  text-decoration: none;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+footer a:hover {
+  color:var(--secondary-color);
+  cursor: pointer;
+}
+
+footer a:active {
+  font-style: oblique;
 }
 
 
 /*
-Ejemplos de paleta de colores
+E7E0C9  rgb(231, 224, 201)  beige
+C1CFC0  rgb(193, 207, 192)  verde
+6B7AA1  rgb(107, 122, 161)  azul
+11324D  rgb(17, 50, 77)     azul oscuro
 */
-.amarillo {
-  background-color: rgb(246, 215, 167);
-}
-
-.amarillo-clarito {
-  background-color: rgb(246, 234, 190);
-}
-
-.verde {
-  background-color: rgb(200, 227, 212);
-}
-.verde-clarito {
-  background-color: rgb(135, 170, 170);
-}

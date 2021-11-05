@@ -18,17 +18,14 @@ Docente: Gustavo Rodriguez
 
 ## Modulo 1: Introducción y nivelación
 ### Clase 1
-
 - Intro a programacion.
 - Frontend, backend, servidor, base de datos.
 - Github
 
 ## Modulo 2: HTML & CSS
 ### Clase 2
-
 - Intro a HTML
 - Etiquetas conocidas
-- Excalidraw
 
 ### Clase 3
 
@@ -60,8 +57,6 @@ Docente: Gustavo Rodriguez
 - Grid template areas
 - Media Queries
 
-
-
 ### Clase 9
 - CSS Grid
 - Media queries
@@ -72,6 +67,10 @@ Docente: Gustavo Rodriguez
 - Selectores
 
 ## Modulo 3: JavaScript
+
+### Clase 11
+- Inicio Modulo 3 Javascript
+
 
 ## Modulo 4: React JS
 
@@ -91,6 +90,10 @@ Docente: Gustavo Rodriguez
 8. 2 pts
 9. 3 pts
 10. 3 pts
+11. 3 pts
+
+## Modulo 2
+11. 2 pts
 
 
 # Ideas proyecto final:

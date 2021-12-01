@@ -126,6 +126,10 @@ Docente: Gustavo Rodriguez
 - `addEventListener("click", function() {...}`
 - `classList` para obtener
 
+### Clase 18
+-`document.querySelector(#id)`
+- Ejercicio event-listeners
+
 
 ## Modulo 4: React JS
 

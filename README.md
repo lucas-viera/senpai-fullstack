@@ -126,9 +126,11 @@ Docente: Gustavo Rodriguez
 - `addEventListener("click", function() {...}`
 - `classList` para obtener
 
-### Clase 18
--`document.querySelector(#id)`
+### Clase 19 30/11/2021
+- Ejercicio menu mobile (burger)
+- `document.querySelector(#id)`
 - Ejercicio event-listeners
+- Ejercicio listado de tareas parte 1
 
 
 ## Modulo 4: React JS
@@ -158,6 +160,9 @@ Docente: Gustavo Rodriguez
 15. 3 pts
 16. 3 pts
 17. 3 pts
+18.
+19. 3 pts 30/11/2021 
+20. 
 
 
 # Ideas proyecto final:

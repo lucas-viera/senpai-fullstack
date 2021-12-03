@@ -126,12 +126,16 @@ Docente: Gustavo Rodriguez
 - `addEventListener("click", function() {...}`
 - `classList` para obtener
 
-### Clase 19 30/11/2021
-- Ejercicio menu mobile (burger)
+### Clase 19 - 2021/11/30
+- Ejercicio menu mobile (burger) - `button menu-toggler`
 - `document.querySelector(#id)`
 - Ejercicio event-listeners
 - Ejercicio listado de tareas parte 1
+- Objeto `classList` para trabajar con CSS: `classList.add()` , `classList.remove()` y `classList.toggle` sirve para agregar o quitar clases a objetos de HTML
+- Reemplazar contenido
 
+### Clase 20 - 2021/12/02
+- 
 
 ## Modulo 4: React JS
 
@@ -162,7 +166,7 @@ Docente: Gustavo Rodriguez
 17. 3 pts
 18.
 19. 3 pts 30/11/2021 
-20. 
+20. 3 pts 02/12/2021
 
 
 # Ideas proyecto final:

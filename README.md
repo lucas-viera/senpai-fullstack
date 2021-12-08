@@ -137,6 +137,9 @@ Docente: Gustavo Rodriguez
 ### Clase 20 - 2021/12/02
 - 
 
+### Clase 21 - 2021/12/07
+- Continuacion ejemplo TODO List
+
 ## Modulo 4: React JS
 
 ## Modulo 5: Node.js + Express
@@ -167,6 +170,7 @@ Docente: Gustavo Rodriguez
 18.
 19. 3 pts 30/11/2021 
 20. 3 pts 02/12/2021
+21. 3 pts 07/12/2021
 
 
 # Ideas proyecto final:

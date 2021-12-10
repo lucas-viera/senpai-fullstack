@@ -140,6 +140,14 @@ Docente: Gustavo Rodriguez
 ### Clase 21 - 2021/12/07
 - Continuacion ejemplo TODO List
 
+### Clase 22 - 2021/12/09
+- JSON
+- `npm install -g json-server`
+- `JSON.parse()`
+- `JSON.stringify()`
+- APIs
+- `fetch` - `then` - `catch`
+
 ## Modulo 4: React JS
 
 ## Modulo 5: Node.js + Express
@@ -171,6 +179,7 @@ Docente: Gustavo Rodriguez
 19. 3 pts 30/11/2021 
 20. 3 pts 02/12/2021
 21. 3 pts 07/12/2021
+22. 3 pts 09/12/2021
 
 
 # Ideas proyecto final:

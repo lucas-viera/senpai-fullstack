@@ -148,6 +148,12 @@ Docente: Gustavo Rodriguez
 - APIs
 - `fetch` - `then` - `catch`
 
+### Clase 23 - 2021/12/14
+- Repaso general de JS parte 1
+
+### Clase 24 - 2021/12/16
+- Repaso general de JS parte 2 (futuro)
+
 ## Modulo 4: React JS
 
 ## Modulo 5: Node.js + Express
@@ -180,6 +186,7 @@ Docente: Gustavo Rodriguez
 20. 3 pts 02/12/2021
 21. 3 pts 07/12/2021
 22. 3 pts 09/12/2021
+23. 3 pts 14/12/2021
 
 
 # Ideas proyecto final:

@@ -187,6 +187,7 @@ Docente: Gustavo Rodriguez
 21. 3 pts 07/12/2021
 22. 3 pts 09/12/2021
 23. 3 pts 14/12/2021
+24. 3 pts 16/12/2021
 
 
 # Ideas proyecto final:

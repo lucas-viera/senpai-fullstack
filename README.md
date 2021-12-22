@@ -152,7 +152,13 @@ Docente: Gustavo Rodriguez
 - Repaso general de JS parte 1
 
 ### Clase 24 - 2021/12/16
-- Repaso general de JS parte 2 (futuro)
+- Repaso general de JS parte 2
+- JSON Server
+
+### Clase 25 - 2021/12/21
+- JSON Server
+- Terminal MAC, Linux & Windows
+- Git & GitHub
 
 ## Modulo 4: React JS
 
@@ -188,6 +194,7 @@ Docente: Gustavo Rodriguez
 22. 3 pts 09/12/2021
 23. 3 pts 14/12/2021
 24. 3 pts 16/12/2021
+25. 3 pts 21/12/2021
 
 
 # Ideas proyecto final:

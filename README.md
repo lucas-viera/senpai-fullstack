@@ -160,6 +160,10 @@ Docente: Gustavo Rodriguez
 - Terminal MAC, Linux & Windows
 - Git & GitHub
 
+### Clase 26 - 2021/12/23
+- Continuacion Git
+- React JS
+
 ## Modulo 4: React JS
 
 ## Modulo 5: Node.js + Express
@@ -195,6 +199,9 @@ Docente: Gustavo Rodriguez
 23. 3 pts 14/12/2021
 24. 3 pts 16/12/2021
 25. 3 pts 21/12/2021
+26. 1 pts 23/12/2021  Con 1 error del sistema
+
+## Modulo 3
 
 
 # Ideas proyecto final:

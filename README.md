@@ -126,6 +126,13 @@ Docente: Gustavo Rodriguez
 - `addEventListener("click", function() {...}`
 - `classList` para obtener
 
+### Clase 18 - 2021/11/25
+- Eventos JS
+- Event Listeners
+- DOM Eventos mediante HTML
+- DOM Eventos mediane atributos
+- DOM eventos mediante listeners
+
 ### Clase 19 - 2021/11/30
 - Ejercicio menu mobile (burger) - `button menu-toggler`
 - `document.querySelector(#id)`

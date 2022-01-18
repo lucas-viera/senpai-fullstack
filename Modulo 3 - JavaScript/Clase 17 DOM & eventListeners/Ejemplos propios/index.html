@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>querySelector vs getElementById</title>
+    <script type="text/javascript">
+        window.onload() = inicio;
+        function inicio(){
+            document.querySelector("#caja1");   //Observar que tiene # como en CSS por ser un ID
+            document.querySelector("div");      //Toma el PRIMER div (no es seguro jugarsela asi)
+            document.querySelectorAll("#caja1")[0];
+            document.querySelectorAll("div")[0];
+            //Version con getElementBy...
+            document.getElementById("caja1");           //No requiere # porque ya "espera" un ID 
+            document.getElementsByTagName("div")[0];    //Devuelve un arraya, por eso tomamos el primero
+
+
+            //ahora para caja2
+            document.querySelector(".caja2");           //Observar que tiene . como en CSS por ser una CLASS
+            document.querySelector("div");              //no sirve porque retorna el primero de los DIV y caja2 es el segundo
+            document.querySelectorAll(".caja2")[0];
+            document.querySelectorAll("div")[1];
+            //Version con getElementBy...
+            document.getElementsByClassName("caja2")[0];    //Como es una CLASS, puede haber mas de un elemento, se debe elegir el primero (0)
+
+
+            //ahora para caja 4 usando una RUTA
+            document.querySelectorAll(".caja3 .caja4")[0];  //Separamos clases con espacios
+            document.getElementsByClassName("caja3")[0].document.getElementsByClassName("caja4")[0];
+
+
+        }
+
+
+    </script>
+</head>
+<body>
+    <div id="caja1">Caja 1</div>
+    <div class="caja2">Caja 2</div>
+    <div class="caja3">
+        <button class="caja4">Aceptar</button>
+    </div>
+    
+</body>
+</html>

@@ -172,6 +172,24 @@ Docente: Gustavo Rodriguez
 
 ## Modulo 4: React JS
 
+### Clase 27 - 2022/01/18
+- Repaso Intro ReactJS
+- Concepto de componentes
+- Concepto de estado 
+- Declarativo, no Imperativo
+- SPA: Single Page Application
+- Node Installation
+- `npx create-react-app my-app`
+- `package.json` y `package-lock.json`
+- `index.js` punto de partida
+- `npm run build | test | start`
+- Directorio public, src y node_modules
+- Sintaxis `JSX` JavaScript mix con HTML
+- `Babel JS`
+- Componentes: se definen con funciones. Su nombre debe comenzar con Mayuscula. Retornan o un unici componente o un unico elemento.
+- `props`
+
+
 ## Modulo 5: Node.js + Express
 
 ## Modulo 6: Base de datos (MongoDB & PostgreSQL)
@@ -208,7 +226,7 @@ Docente: Gustavo Rodriguez
 26. 1 pts 23/12/2021  Con 1 error del sistema
 
 ## Modulo 3
-
+27. 3 pts 18/01/2022
 
 # Ideas proyecto final:
 - **Web personal**

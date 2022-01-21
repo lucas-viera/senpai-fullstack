@@ -189,6 +189,13 @@ Docente: Gustavo Rodriguez
 - Componentes: se definen con funciones. Su nombre debe comenzar con Mayuscula. Retornan o un unici componente o un unico elemento.
 - `props`
 
+### Clase 28 - 2022-01-20
+- Migrar ToDo List a React
+- Exportar componente desde `index.js`
+- Importar componente desde App.js
+- Repasar
+- React Router
+- Dibujo condicional: mostrar o no en función de la existencia de por ejemplo items en un array, etc
 
 ## Modulo 5: Node.js + Express
 
@@ -227,6 +234,7 @@ Docente: Gustavo Rodriguez
 
 ## Modulo 3
 27. 3 pts 18/01/2022
+28. 3 pts 20/01/2022
 
 # Ideas proyecto final:
 - **Web personal**

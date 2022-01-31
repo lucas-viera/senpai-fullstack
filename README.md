@@ -141,10 +141,12 @@ Docente: Gustavo Rodriguez
 - Reemplazar contenido
 
 ### Clase 20 - 2021/12/02
-- 
+- Ejemplo menu mobile responsive
+- Ejemplo TODO List
 
 ### Clase 21 - 2021/12/07
 - Continuacion ejemplo TODO List
+- Funcionalidad de API JSON random data
 
 ### Clase 22 - 2021/12/09
 - JSON
@@ -197,9 +199,28 @@ Docente: Gustavo Rodriguez
 - React Router
 - Dibujo condicional: mostrar o no en función de la existencia de por ejemplo items en un array, etc
 
+
+### Clase 29 - 2022-01-25
+- Repaso de componentes
+- Cierre `<img />`
+- Errores
+- Conditional render
+- Estado
+
+### Clase 30 - 2022-01-27
+- Ejemplo con Login (True o False) para Conditional Rendering 
+- Funcion `map` - ejemplo de carga de información en lista desde objeto (array)
+- Funcion `map` util para lista `ul` - `li`
+- Ruteo y librerias **externas**
+- www.npmjs.com
+- 
+
+
+
 ## Modulo 5: Node.js + Express
 
 ## Modulo 6: Base de datos (MongoDB & PostgreSQL)
+
 
 # Puntaje quizzes:
 ## Modulo 1
@@ -235,6 +256,8 @@ Docente: Gustavo Rodriguez
 ## Modulo 3
 27. 3 pts 18/01/2022
 28. 3 pts 20/01/2022
+29. 3 pts 25/01/2022
+30. 1 pts 27/01/2022  Con error del sistema
 
 # Ideas proyecto final:
 - **Web personal**

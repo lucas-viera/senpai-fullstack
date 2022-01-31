@@ -1,0 +1,12 @@
+Etapa 1:
+
+- Agregar tarea
+- COntrolar tareas vacias
+- Borrar el formulario una vez agregada la tarea
+- Borrar todas las tareas
+
+Etapa 2:
+- Marcar el input como required
+- Eliminar una tarea especifica
+- Cargar tareas al inicio
+- Marcar tarea como realizada al hacer click sobre ella y tacharla

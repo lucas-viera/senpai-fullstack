@@ -158,6 +158,7 @@ Docente: Gustavo Rodriguez
 
 ### Clase 23 - 2021/12/14
 - Repaso general de JS parte 1
+- Ejemplo prestamo
 
 ### Clase 24 - 2021/12/16
 - Repaso general de JS parte 2

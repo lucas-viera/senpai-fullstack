@@ -1,0 +1,8 @@
+- Instalar NodeJS
+- Comprobar instalacion correcta de Node y NPM: `node -v` y `npm -v`
+- Git de JSON Server: https://github.com/typicode/json-server
+- Instalación JSON Server: `npm install -g json-server`
+- - Atencion MAC con `-g` con `sudo`
+- Crear `db.json`
+- Comando `json-server --watch db.json` 
+- Visita `locallhost:3000` y `localhost:3000/tareas`

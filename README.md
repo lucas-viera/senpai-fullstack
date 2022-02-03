@@ -162,20 +162,20 @@ Docente: Gustavo Rodriguez
 
 ### Clase 24 - 2021/12/16
 - Repaso general de JS parte 2
-- JSON Server
+- JSON Server con `fetch`/`get` y `post`
 
-### Clase 25 - 2021/12/21
+### Clase 25 - 2021/12/21 (ver de nuevo)
 - JSON Server
 - Terminal MAC, Linux & Windows
 - Git & GitHub
 
-### Clase 26 - 2021/12/23
+### Clase 26 - 2021/12/23 (ver de nuevo)
 - Continuacion Git
 - React JS
 
 ## Modulo 4: React JS
 
-### Clase 27 - 2022/01/18
+### Clase 27 - 2022/01/18 (ver de nuevo)
 - Repaso Intro ReactJS
 - Concepto de componentes
 - Concepto de estado 
@@ -192,7 +192,7 @@ Docente: Gustavo Rodriguez
 - Componentes: se definen con funciones. Su nombre debe comenzar con Mayuscula. Retornan o un unici componente o un unico elemento.
 - `props`
 
-### Clase 28 - 2022-01-20
+### Clase 28 - 2022/01/20 (ver de nuevo)
 - Migrar ToDo List a React
 - Exportar componente desde `index.js`
 - Importar componente desde App.js
@@ -201,21 +201,28 @@ Docente: Gustavo Rodriguez
 - Dibujo condicional: mostrar o no en función de la existencia de por ejemplo items en un array, etc
 
 
-### Clase 29 - 2022-01-25
+### Clase 29 - 2022/01/25 (ver de nuevo)
 - Repaso de componentes
 - Cierre `<img />`
 - Errores
 - Conditional render
 - Estado
 
-### Clase 30 - 2022-01-27
+### Clase 30 - 2022/01/27 (ver de nuevo)
 - Ejemplo con Login (True o False) para Conditional Rendering 
 - Funcion `map` - ejemplo de carga de información en lista desde objeto (array)
 - Funcion `map` util para lista `ul` - `li`
 - Ruteo y librerias **externas**
 - www.npmjs.com
-- 
+ 
 
+### Clase 31 - 2022/02/01 (ver de nuevo)
+- Estructura de carpetas React Router
+- Proyecto `react-tasklist`
+- `useNavigate()`
+- rutas `<Route path="/..."`
+- Libreria `axios`
+- Ejemplo con `db.json`
 
 
 ## Modulo 5: Node.js + Express
@@ -259,6 +266,7 @@ Docente: Gustavo Rodriguez
 28. 3 pts 20/01/2022
 29. 3 pts 25/01/2022
 30. 1 pts 27/01/2022  Con error del sistema
+31. 2 pts 01/02/2022  Con error del sistema
 
 # Ideas proyecto final:
 - **Web personal**

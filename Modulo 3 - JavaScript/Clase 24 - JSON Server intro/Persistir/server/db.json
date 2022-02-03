@@ -1,0 +1,20 @@
+{
+  "contactos": [
+    {
+      "id": 1,
+      "mensaje": "Mi primer contacto desde la web"
+    },
+    {
+      "id": 2,
+      "mensaje": "Mensaje desd eformulario"
+    },
+    {
+      "mensaje": "aaaa",
+      "id": 3
+    },
+    {
+      "mensaje": "aaaaaa2",
+      "id": 4
+    }
+  ]
+}

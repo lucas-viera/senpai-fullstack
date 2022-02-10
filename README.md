@@ -1,4 +1,4 @@
-# senpai-fullstack
+# FullStack developer - Senpai Academy
 
 Docente: Gustavo Rodriguez
 
@@ -205,8 +205,10 @@ Docente: Gustavo Rodriguez
 - Repaso de componentes
 - Cierre `<img />`
 - Errores
+- Ubicacion de los `styles`
 - Conditional render
 - Estado
+- - Hooks `use...` etc
 
 ### Clase 30 - 2022/01/27 (ver de nuevo)
 - Ejemplo con Login (True o False) para Conditional Rendering 

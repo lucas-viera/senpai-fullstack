@@ -229,6 +229,11 @@ Docente: Gustavo Rodriguez
 
 ## Modulo 5: Node.js + Express
 
+### Clase 3_ - 2022/02/10 (ver de nuevo)
+- Retomamos con repaso de Node.js
+- Hosting
+- Conexion entre funcion suma de `operations.js` e `index.js`
+
 ## Modulo 6: Base de datos (MongoDB & PostgreSQL)
 
 

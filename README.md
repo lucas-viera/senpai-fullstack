@@ -1,4 +1,4 @@
-# senpai-fullstack
+# FullStack developer - Senpai Academy
 
 Docente: Gustavo Rodriguez
 
@@ -234,8 +234,10 @@ Docente: Gustavo Rodriguez
 - Repaso de componentes
 - Cierre `<img />`
 - Errores
+- Ubicacion de los `styles`
 - Conditional render
 - Estado
+- - Hooks `use...` etc
 
 ### Clase 30 - 2022/01/27 (ver de nuevo)
 - Ejemplo con Login (True o False) para Conditional Rendering 
@@ -276,6 +278,12 @@ Docente: Gustavo Rodriguez
 
 ## Modulo 5: Node.js + Express
 
+### Clase 3_ - 2022/02/10 (ver de nuevo)
+- Retomamos con repaso de Node.js
+- Hosting
+- Conexion entre funcion suma de `operations.js` e `index.js`
+
+## Modulo 6: Base de datos (MongoDB & PostgreSQL)
 
 ## Modulo 6: Base de datos (MongoDB & PostgreSQL)
  

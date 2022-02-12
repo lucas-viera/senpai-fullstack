@@ -11,8 +11,8 @@ Docente: Gustavo Rodriguez
 
 # Fechas de entregas
 1.  07 - noviembre - 2021 | Puntaje 100%
-2.  06 - febrero - 2022 | 
-3.  17 - abril - 2022 | 
+2.  13 - febrero - 2022 | Puntaje 
+3.  17 - abril - 2022 | Puntaje
 
 # Clases
 
@@ -164,41 +164,70 @@ Docente: Gustavo Rodriguez
 - Repaso general de JS parte 2
 - JSON Server con `fetch`/`get` y `post`
 
-### Clase 25 - 2021/12/21 (ver de nuevo)
+### Clase 25 - 2021/12/21
 - JSON Server
 - Terminal MAC, Linux & Windows
 - Git & GitHub
 
-### Clase 26 - 2021/12/23 (ver de nuevo)
+### Clase 26 - 2021/12/23
 - Continuacion Git
 - React JS
+- Introduccion React, componentes, `npx create-react-app my app`
+- `npm start` starts development server
+- `npm run build` 
+- `npm test`
+- `npm run eject`
+- Estructura inicial de carpetas:
+-- `node_modules`
+-- `public`
+-- `src`
+--- `App.css`
+--- `App.js`
+--- `App.test.js`
+--- `Index.css`
+--- `Index.js`
 
 ## Modulo 4: React JS
 
-### Clase 27 - 2022/01/18 (ver de nuevo)
+### Clase 27 - 2022/01/18
 - Repaso Intro ReactJS
 - Concepto de componentes
 - Concepto de estado 
 - Declarativo, no Imperativo
-- SPA: Single Page Application
+- **SPA**: Single Page Application
 - Node Installation
 - `npx create-react-app my-app`
 - `package.json` y `package-lock.json`
 - `index.js` punto de partida
 - `npm run build | test | start`
-- Directorio public, src y node_modules
+- Directorios `public`, `src` y `node_modules`
 - Sintaxis `JSX` JavaScript mix con HTML
 - `Babel JS`
-- Componentes: se definen con funciones. Su nombre debe comenzar con Mayuscula. Retornan o un unici componente o un unico elemento.
+- Componentes: se definen con funciones. Su nombre debe comenzar con Mayuscula. Retornan o un unico componente o un unico elemento.
 - `props`
+- `ReactDOM`
 
 ### Clase 28 - 2022/01/20 (ver de nuevo)
 - Migrar ToDo List a React
+- Dejar Estilos dentro de directorio `public/styles` y linkear como siempre: `<link rel="stylesheet" href="styles/styles.css"/>`
 - Exportar componente desde `index.js`
-- Importar componente desde App.js
-- Repasar
-- React Router
-- Dibujo condicional: mostrar o no en función de la existencia de por ejemplo items en un array, etc
+- Importar componente desde `App.jsx`
+  - En `index.js`: `import {App} from "./App";`
+  - En `App.jsx`: `export function App();`
+- Tener un `.jsx` por cada componente
+- Cambiar los `class` de `HTML` a `className`
+- Punto de partida para los proyectos `App.jsx` - generalmente poco codigo.
+- Componentes = funciones con retorno de un **unico** elemento `HTML`: 
+  - `export function Pepito(){ return <h1>Title</
+  h1>}`
+  - `export function Pepito(){ return <> varios elementos </>`
+  - `export function Pepito{ return <Fragment> varios elementos </Fragment>}`
+- Uso de `props` como "parametro" de un componente (ejemplo: el dato que varía, como una foto de perfil, un nombre, etc)
+  - Uso de `props.description`
+  - `<taskItem description="Estudiar A."/>`
+  - `<taskItem description="Estudiar B."/>`
+- `Conditional rendering` o Dibujo condicional: mostrar o no en función de la existencia de por ejemplo items en un array, etc
+- `React Router`: mencion al pasar
 
 
 ### Clase 29 - 2022/01/25 (ver de nuevo)
@@ -224,11 +253,32 @@ Docente: Gustavo Rodriguez
 - Libreria `axios`
 - Ejemplo con `db.json`
 
+### Clase 32 - 2022/02/03 (ver de nuevo)
+- Continuamos con `TaskList.jsx`
+- Listado de tareas
+- Libreria `Axios`:
+- Dentro del directorio del proyecto: `npm install axios`
+- Por ser una libreria externa `import axios from "axios"`
+- Hook `useEffect()`
+- Piques para entrega 2
+
+### Clase 33 - 2022/02/08
+- Aplicacion de `Blog` en `HTML`, `CSS` y `JS` vanilla para migrar con `ReactJS`
+- Componentes definidos:
+  - `ContactPage.jsx`
+  -`HomePage.jsx`
+  - `BlogPage.jsx`
+  - `BlogsPage.jsx`
+- Estructura `src/common, pages`
+- Estilos de `Bootstrap`
+- Lectura de `db.json` informacion de Blogs usando `Axios`
+- Introduccion Node.js
 
 ## Modulo 5: Node.js + Express
 
-## Modulo 6: Base de datos (MongoDB & PostgreSQL)
 
+## Modulo 6: Base de datos (MongoDB & PostgreSQL)
+ 
 
 # Puntaje quizzes:
 ## Modulo 1
@@ -267,6 +317,8 @@ Docente: Gustavo Rodriguez
 29. 3 pts 25/01/2022
 30. 1 pts 27/01/2022  Con error del sistema
 31. 2 pts 01/02/2022  Con error del sistema
+32. 3 pts 03/02/2022
+33. 3 pts 08/02/2022
 
 # Ideas proyecto final:
 - **Web personal**

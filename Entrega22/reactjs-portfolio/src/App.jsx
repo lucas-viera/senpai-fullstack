@@ -1,4 +1,5 @@
-import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import * as React from "react";
+import { Route, Routes, Link, BrowserRouter as Router } from "react-router-dom";
 import { Navbar } from "./components/common/Navbar";
 import { Footer } from "./components/common/Footer";
 import { Home } from "./components/pages/Home";
@@ -11,13 +12,14 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* <Routes>  
-        <Route path="/" exact component={<Home />} />
-        <Route path="/projects" component={<Projects />} />
-        <Route path="/experience" component={<Experience />} />
-        <Route path="/contact" component={<Contact />} />
-      </Routes> */}
-      <Home /> 
+      <main>
+        <Routes>  
+          <Route path="/" exact element={<Home />}></Route>
+          <Route path="/projects" element={<Projects />}></Route>
+          <Route path="/experience" element={<Experience />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+        </Routes>
+      </main>
       <Footer /> 
     </> 
   );

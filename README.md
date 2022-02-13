@@ -230,7 +230,7 @@ Docente: Gustavo Rodriguez
 - `React Router`: mencion al pasar
 
 
-### Clase 29 - 2022/01/25 (ver de nuevo)
+### Clase 29 - 2022/01/25
 - Repaso de componentes
 - Cierre `<img />`
 - Errores
@@ -268,7 +268,7 @@ Docente: Gustavo Rodriguez
 - Aplicacion de `Blog` en `HTML`, `CSS` y `JS` vanilla para migrar con `ReactJS`
 - Componentes definidos:
   - `ContactPage.jsx`
-  -`HomePage.jsx`
+  - `HomePage.jsx`
   - `BlogPage.jsx`
   - `BlogsPage.jsx`
 - Estructura `src/common, pages`

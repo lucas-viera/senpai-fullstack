@@ -1,4 +1,0 @@
-Cosas a corregir:
-[OK] - En el validador me saltó que hay un div cerrando extra.
-[OK] - En mobile los skills creo que se ven un poco chicos, con respecto al resto del sitio
-- Formulario dejarle un padding-left para que el placeholder no quede pegado contra el borde

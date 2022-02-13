@@ -1,0 +1,26 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Nasa APOD",
+      "image":"/assets/images/nasa-logo.svg",
+      "description": "Astronomy Picture of the Day provides a daily astronomy-related picture from NASA via API.",
+      "url":"https://bit.ly/3Ltgn4a"
+    },
+    {
+      "id": 2,
+      "title": "ReactJS ToDo List",
+      "image":"/assets/images/todo-list.jpeg",
+      "description": "ToDo List using ReactJS and JSON server persistence.",
+      "url":"https://bit.ly/3gYGamV"
+    },
+    {
+      "id": 3,
+      "title": "Insider Food",
+      "image":"/assets/images/insider-food.jpeg",
+      "description": "Insider Food is the perfect website to organize your secret family recipes.",
+      "url":"https://bit.ly/3gOn8zb"
+    }
+  ]
+}
+  

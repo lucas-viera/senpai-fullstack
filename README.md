@@ -319,7 +319,27 @@ console.log(
 );
 ```
 - El campo `scripts` del `package.json` sirve para los alias de los comandos `npm run`
+- Resumen para `API` dentro de `scripts`:
+```
+...
+"api": "json-server src/server/db.json --port 4000"
+...
+```
+- Servidor HTTP libreria de tercero
+```
+const http = require("http");
+const port = process.env.PORT || 4000;
 
+conser server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader("Content-Type", "text/html");
+  res.end("<h1>Hello world!</h1>");
+});
+
+server.listen(port, () => {
+  console.log(`Server running at port ${port}`);
+});
+```
 
 ### Clase 35 - 2022/02/22 (ver de nuevo) (*)
 - Repaso hasta el momento
@@ -342,27 +362,7 @@ console.log(
   - `/routes`
   - `/views` (no necesariemente es requerida)
 - Node no refresca cambios en caliente. Debe detenerse y volver a correr el proceso. Más adelante veremos una solución a esto.
-- Resumen para `API` dentro de `scripts`:
-```
-...
-"api": "json-server src/server/db.json --port 4000"
-...
-```
-- Servidor HTTP libreria de tercero
-```
-const http = require("http");
-const port = process.env.PORT || 4000;
 
-conser server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader("Content-Type", "text/html");
-  res.end("<h1>Hello world!</h1>");
-});
-
-server.listen(port, () => {
-  console.log(`Server running at port ${port}`);
-});
-```
 ### Clase 38 - 2022/03/08 (ver de nuevo y hacer quiz)
 -
 

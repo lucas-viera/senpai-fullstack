@@ -9,11 +9,13 @@ Docente: Gustavo Rodriguez
 5. Node.js + Express
 6. MongoDB & PostgreSQL
 
+#
 # Fechas de entregas
 1.  07 - noviembre - 2021 | Puntaje 100%
 2.  13 - febrero - 2022 | Puntaje 
 3.  17 - abril - 2022 | Puntaje
 
+#
 # Clases
 
 ## Modulo 1: Introducción y nivelación
@@ -229,7 +231,6 @@ Docente: Gustavo Rodriguez
 - `Conditional rendering` o Dibujo condicional: mostrar o no en función de la existencia de por ejemplo items en un array, etc
 - `React Router`: mencion al pasar
 
-
 ### Clase 29 - 2022/01/25
 - Repaso de componentes
 - Cierre `<img />`
@@ -246,7 +247,6 @@ Docente: Gustavo Rodriguez
 - Ruteo y librerias **externas**
 - www.npmjs.com
  
-
 ### Clase 31 - 2022/02/01 (ver de nuevo)
 - Estructura de carpetas React Router
 - Proyecto `react-tasklist`
@@ -258,7 +258,7 @@ Docente: Gustavo Rodriguez
 ### Clase 32 - 2022/02/03 (ver de nuevo)
 - Continuamos con `TaskList.jsx`
 - Listado de tareas
-- Libreria `Axios`:
+- Libreria `axios`:
 - Dentro del directorio del proyecto: `npm install axios`
 - Por ser una libreria externa `import axios from "axios"`
 - Hook `useEffect()`
@@ -278,16 +278,106 @@ Docente: Gustavo Rodriguez
 
 ## Modulo 5: Node.js + Express
 
-### Clase 3_ - 2022/02/10 (ver de nuevo)
+### Clase 34 - 2022/02/10
 - Retomamos con repaso de Node.js
 - Hosting
 - Conexion entre funcion suma de `operations.js` e `index.js`
+- En `index.js`: `const sumar = require("./operations")`
+- En `operations.js` debe estar la definicion de la funcion `sumar()` y una linea con `module.exports = sumar;`
+- Para exportar varias funciones, se utilizan llaves
+- Object destructuring
+  - Equivalencia de `const name = persona.name;`
+  - Con `const {name}  = persona;`
+- Se puede hacer `module.exports = ` variables, funciones, arrays, etc
+- Se puede exportar a `package.json` y va a contener un conjunto de dependencias
+- Con `npm init -y` vamos a generar `package.json` con el siguiente formato:
+```
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+```
+- Alternativa a `npm` : `yarn`
+- Ejemplo `cowsay` : `npm install cowsay`
+- En `app.js`:
+```
+const cowsay = require("cowsay");
+console.log(
+  cowsay.say({
+    text: "Moooo",
+    e: "Oo",
+    T: "U",
+  })
+);
+```
+- El campo `scripts` del `package.json` sirve para los alias de los comandos `npm run`
+
+
+### Clase 35 - 2022/02/22 (ver de nuevo) (*)
+- Repaso hasta el momento
+- `NPM`
+- `HTTP Server` punto importante del curso
+- Callbacks & Promises
+- `fs` para `writeFile()` y `readFile()`
+- `HTTP`
+
+### Clase 36 - 2022/02/24 (ver de nuevo)
+- `async` & `await` 
+- Introduccion Express JS
+
+### Clase 37 - 2022/03/03 (ver de nuevo)
+- Repaso general FE vs BE
+- Ejercicio portal de noticias: `noticias-ui` & `noticias-api`
+- Express
+- Scaffolding - estructura de directorios
+  - `/public`
+  - `/routes`
+  - `/views` (no necesariemente es requerida)
+- Node no refresca cambios en caliente. Debe detenerse y volver a correr el proceso. Más adelante veremos una solución a esto.
+- Resumen para `API` dentro de `scripts`:
+```
+...
+"api": "json-server src/server/db.json --port 4000"
+...
+```
+- Servidor HTTP libreria de tercero
+```
+const http = require("http");
+const port = process.env.PORT || 4000;
+
+conser server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader("Content-Type", "text/html");
+  res.end("<h1>Hello world!</h1>");
+});
+
+server.listen(port, () => {
+  console.log(`Server running at port ${port}`);
+});
+```
+### Clase 38 - 2022/03/08 (ver de nuevo y hacer quiz)
+-
+
+### Clase 39 - 2022/03/10
+-
+
+### Clase 40 - 2022/03/15
+-
+
+### Clase 41 - 2022/03/17
+-
 
 ## Modulo 6: Base de datos (MongoDB & PostgreSQL)
 
-## Modulo 6: Base de datos (MongoDB & PostgreSQL)
- 
-
+#
 # Puntaje quizzes:
 ## Modulo 1
 1. 3 pts
@@ -327,6 +417,12 @@ Docente: Gustavo Rodriguez
 31. 2 pts 01/02/2022  Con error del sistema
 32. 3 pts 03/02/2022
 33. 3 pts 08/02/2022
+
+## Modulo 4
+34. 3 pts 10/02/2022
+35. 2 pts 22/02/2022
+36. 1 pts 24/02/2022 Con error del sistema (2pts)
+37. 3 pts 03/03/2022
 
 # Ideas proyecto final:
 - **Web personal**

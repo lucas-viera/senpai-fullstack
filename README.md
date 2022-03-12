@@ -341,15 +341,40 @@ server.listen(port, () => {
 });
 ```
 
-### Clase 35 - 2022/02/22 (ver de nuevo) (*)
+### Clase 35 - 2022/02/22
 - Repaso hasta el momento
+- Repaso de uso `npm init` para generar el archivo de dependencias `package.json`
 - `NPM`
-- `HTTP Server` punto importante del curso
+  - `npm install cowsay`
+  - `npm install express`
+- `HTTP Server` importante porque permite que el proceso de `node` funcione como server y no finalice.
+```
+const http = requite("http");
+const port: 4000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader("Content-Type", "text/html");
+  res.end("Hols desde Node: " + now);
+});
+server.listen(port);
+```
+- El server se sigue levantando con el comando `npm start`
+- El elemento `req` tiene varios atributos.
 - Callbacks & Promises
 - `fs` para `writeFile()` y `readFile()`
-- `HTTP`
+```
+fs.readFile("src/data.json", (err, data) => {
+  console.log(data);
+})
+```
+- Promises, un ejemplo de promesa que habíamos visto: `axios`
+  - `then` respuesta OK
+  - `catch` respuesta de error
 
-### Clase 36 - 2022/02/24 (ver de nuevo)
+
+
+### Clase 36 - 2022/02/24 (ver de nuevo) (*)
 - `async` & `await` 
 - Introduccion Express JS
 
@@ -366,7 +391,7 @@ server.listen(port, () => {
 ### Clase 38 - 2022/03/08 (ver de nuevo y hacer quiz)
 -
 
-### Clase 39 - 2022/03/10
+### Clase 39 - 2022/03/10 (ver y hacer quiz)
 -
 
 ### Clase 40 - 2022/03/15

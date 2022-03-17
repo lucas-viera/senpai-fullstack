@@ -374,11 +374,49 @@ fs.readFile("src/data.json", (err, data) => {
 
 
 
-### Clase 36 - 2022/02/24 (ver de nuevo) (*)
-- `async` & `await` 
-- Introduccion Express JS
+### Clase 36 - 2022/02/24
+- Callbacks
+- Ejemplo con `fileUtils.js`
+```
+//En index.js
 
-### Clase 37 - 2022/03/03 (ver de nuevo)
+const fileUtils = require("./fileUtils");
+const fileName = "dist/mitexto.txt";
+const fileContent = "Senpai Academy FSD8";
+
+fileUtils.guardarArchivoCallback(fileName, fileContent, () => {
+  console.log("Se guardo correctamente");
+});
+```
+- EventLoop es lo que permite que node sea asincrono.
+- Para evitar el 'promise hell' se emplea `await`. Esto trae menor nivel de indentación en el código.
+```
+const resArchivo1 = await fileUtils.guardarArchivoPromise(fileName1, fileContent1);
+const resArchivo2 = await fileUtils.guardarArchivoPromise(fileName2, fileContent2);
+```
+- Introduccion a librería Express JS
+`npm install express`
+- Como utilizarla
+```
+const express = require('express');
+const api = express();
+
+api.get('/' , function(req, res) {
+  req.send('Hello');
+});
+
+api.listen(4000);
+```
+- Como definir otra URL (y usando arrow function):
+```
+api.get('/usuarios', (req, res) => {
+  req.send('Usuarios');
+});
+
+api.listen(4000);
+```
+
+### Clase 37 - 2022/03/03 (ver de nuevo) (*)
 - Repaso general FE vs BE
 - Ejercicio portal de noticias: `noticias-ui` & `noticias-api`
 - Express
@@ -388,17 +426,26 @@ fs.readFile("src/data.json", (err, data) => {
   - `/views` (no necesariemente es requerida)
 - Node no refresca cambios en caliente. Debe detenerse y volver a correr el proceso. Más adelante veremos una solución a esto.
 
-### Clase 38 - 2022/03/08 (ver de nuevo y hacer quiz)
+### Clase 38 - 2022/03/08 (ver y hacer quiz)
 -
 
-### Clase 39 - 2022/03/10 (ver y hacer quiz)
+### Clase 39 - 2022/03/10 (ver)
 -
 
-### Clase 40 - 2022/03/15
--
+### Clase 40 - 2022/03/15 (ver y hacer quiz)
+- 
 
 ### Clase 41 - 2022/03/17
+- 
+
+### Clase 42 - 2022/03/22
+- 
+
+### Clase 43 - 2022/03/24
 -
+
+### Clase 44 - 2022/03/29
+- 
 
 ## Modulo 6: Base de datos (MongoDB & PostgreSQL)
 
@@ -448,7 +495,13 @@ fs.readFile("src/data.json", (err, data) => {
 35. 2 pts 22/02/2022
 36. 1 pts 24/02/2022 Con error del sistema (2pts)
 37. 3 pts 03/03/2022
+38. 3 pts 08/03/2022 hecha a destiempo
+39. 3 pts 10/03/2022 hecha a destiempo
+40. hacer 15/03/2022
 
+## Modulo 5
+
+#
 # Ideas proyecto final:
 - **Web personal**
 - Registros de gastos / listado de gastos
@@ -458,3 +511,4 @@ fs.readFile("src/data.json", (err, data) => {
 - Blog
 - Web institucional
 - Encuestas / Quiz
+

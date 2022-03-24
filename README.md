@@ -416,30 +416,79 @@ api.get('/usuarios', (req, res) => {
 api.listen(4000);
 ```
 
-### Clase 37 - 2022/03/03 (ver de nuevo) (*)
+### Clase 37 - 2022/03/03
 - Repaso general FE vs BE
-- Ejercicio portal de noticias: `noticias-ui` & `noticias-api`
+- Repaso de conceptos de hosting y DNS
+- Ejercicio portal de noticias: `noticias-ui` & `noticias-api` manejaremos dos repositorios diferentes para cada parte.
 - Express
 - Scaffolding - estructura de directorios
   - `/public`
   - `/routes`
   - `/views` (no necesariemente es requerida)
 - Node no refresca cambios en caliente. Debe detenerse y volver a correr el proceso. Más adelante veremos una solución a esto.
+- Levantamos un endpoint `noticias-principales`
+```
+api.get("/noticias-principales", (req, res) => {
+  res.send(noticias);
+});
+```
+Donde `noticias` es un objeto (en un futuro será respuesta de una BD por ejemplo):
+```
+const noticias = [
+  { id: 1, titulo: "Noticia A" },
+  { id: 2, titulo: "Noticia B" },
+  { id: 3, titulo: "Noticia C" }
+];
+```
+Y se puede visitar en localhost, puerto `4000`:
+- `api.listen(4000)`
+- Del lado de la UI, agregamos en `App.js` el codigo para que se haga la consulta a traves de `axios`:
+
+```
+//Buscar noticias a la api
+  useEffect(() => {
+    //Utilizar AXIOS para ir a la API a buscar la info
+    api.get("/noticias-principales").then((response) => {
+      //Actualizamos el estado con las noticias de la API
+      setNoticias(response.data);
+    });
+  }, []);
+
+  return (
+    <div className="row">
+      {noticias.map((noticiaJSON, index) => {
+        return (
+          <div className="col-4 mt-2" key={index}>
+            <div className="card" style={{ width: "100%" }}>
+              <img style={{ width: "200px" }} src={imagesUrl + noticiaJSON.image} />
+              <div className="card-body">
+                <h5 className="card-title">noticiaJSON.titulo}</h5>
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+```
 
 ### Clase 38 - 2022/03/08 (ver y hacer quiz)
 -
 
 ### Clase 39 - 2022/03/10 (ver)
--
+- Manejo de errores
 
 ### Clase 40 - 2022/03/15 (ver y hacer quiz)
-- 
+- Formularios y archivos
 
-### Clase 41 - 2022/03/17
-- 
+### Clase 41 - 2022/03/17 (ver y hacer quiz)
+- Middleware Static
 
-### Clase 42 - 2022/03/22
-- 
+### Clase 42 - 2022/03/22 (ver y hacer quiz)
+- Routers y Debugging
 
 ### Clase 43 - 2022/03/24
 -

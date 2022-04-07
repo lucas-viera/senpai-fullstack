@@ -291,7 +291,7 @@ Docente: Gustavo Rodriguez
 - Se puede hacer `module.exports = ` variables, funciones, arrays, etc
 - Se puede exportar a `package.json` y va a contener un conjunto de dependencias
 - Con `npm init -y` vamos a generar `package.json` con el siguiente formato:
-```
+```json
 {
   "name": "playground",
   "version": "1.0.0",
@@ -308,7 +308,7 @@ Docente: Gustavo Rodriguez
 - Alternativa a `npm` : `yarn`
 - Ejemplo `cowsay` : `npm install cowsay`
 - En `app.js`:
-```
+``` javascript
 const cowsay = require("cowsay");
 console.log(
   cowsay.say({
@@ -320,13 +320,13 @@ console.log(
 ```
 - El campo `scripts` del `package.json` sirve para los alias de los comandos `npm run`
 - Resumen para `API` dentro de `scripts`:
-```
+```bash
 ...
 "api": "json-server src/server/db.json --port 4000"
 ...
 ```
 - Servidor HTTP libreria de tercero
-```
+``` javascript
 const http = require("http");
 const port = process.env.PORT || 4000;
 
@@ -348,7 +348,7 @@ server.listen(port, () => {
   - `npm install cowsay`
   - `npm install express`
 - `HTTP Server` importante porque permite que el proceso de `node` funcione como server y no finalice.
-```
+```javascript
 const http = requite("http");
 const port: 4000;
 
@@ -363,7 +363,7 @@ server.listen(port);
 - El elemento `req` tiene varios atributos.
 - Callbacks & Promises
 - `fs` para `writeFile()` y `readFile()`
-```
+``` javascript
 fs.readFile("src/data.json", (err, data) => {
   console.log(data);
 })
@@ -377,7 +377,7 @@ fs.readFile("src/data.json", (err, data) => {
 ### Clase 36 - 2022/02/24
 - Callbacks
 - Ejemplo con `fileUtils.js`
-```
+``` javascript
 //En index.js
 
 const fileUtils = require("./fileUtils");
@@ -390,14 +390,14 @@ fileUtils.guardarArchivoCallback(fileName, fileContent, () => {
 ```
 - EventLoop es lo que permite que node sea asincrono.
 - Para evitar el 'promise hell' se emplea `await`. Esto trae menor nivel de indentación en el código.
-```
+``` javascript
 const resArchivo1 = await fileUtils.guardarArchivoPromise(fileName1, fileContent1);
 const resArchivo2 = await fileUtils.guardarArchivoPromise(fileName2, fileContent2);
 ```
 - Introduccion a librería Express JS
 `npm install express`
 - Como utilizarla
-```
+``` javascript
 const express = require('express');
 const api = express();
 
@@ -408,7 +408,7 @@ api.get('/' , function(req, res) {
 api.listen(4000);
 ```
 - Como definir otra URL (y usando arrow function):
-```
+``` javascript
 api.get('/usuarios', (req, res) => {
   req.send('Usuarios');
 });
@@ -427,13 +427,13 @@ api.listen(4000);
   - `/views` (no necesariemente es requerida)
 - Node no refresca cambios en caliente. Debe detenerse y volver a correr el proceso. Más adelante veremos una solución a esto.
 - Levantamos un endpoint `noticias-principales`
-```
+``` javascript
 api.get("/noticias-principales", (req, res) => {
   res.send(noticias);
 });
 ```
 Donde `noticias` es un objeto (en un futuro será respuesta de una BD por ejemplo):
-```
+```json
 const noticias = [
   { id: 1, titulo: "Noticia A" },
   { id: 2, titulo: "Noticia B" },
@@ -444,7 +444,7 @@ Y se puede visitar en localhost, puerto `4000`:
 - `api.listen(4000)`
 - Del lado de la UI, agregamos en `App.js` el codigo para que se haga la consulta a traves de `axios`:
 
-```
+```  javascript
 //Buscar noticias a la api
   useEffect(() => {
     //Utilizar AXIOS para ir a la API a buscar la info
@@ -475,28 +475,152 @@ Y se puede visitar en localhost, puerto `4000`:
   );
 ```
 
-### Clase 38 - 2022/03/08 (ver y hacer quiz)
--
+### Clase 38 - 2022/03/08
+- Middlewares o Man in the Middle
+- `body-parser`
+- `CORS`
+- Manejo de problema para visitar N noticias de cantidad variable e impredecible: `Express Routing`
+  - Se puede hacer algo como en la diapositiva de Clase 37:
+  ```javascript
+  app.get('/book/:bookId', )
+  ```
+  O también otro ejemplo:
+  ``` javascript
+  app.get('/user/:userId/publications/:pubId', )
+  ``` 
+- El segundo parametro de `app.get( , )` es una funcion `callback`:
+``` javascript
+app.get('/contacto', function (request, response) {
+  response.statusCode = 200;
+  response.setHeader("Content-Type", "text/html");
+  response.end("<div> <h3> Pagina de Contacto</h3> </div>");
+});
+```
+- Para tomar los valores de `bookId` por ejemplo, serán leidos desde `request.params`
+- Para seleccionar especificamente un id, luego veremos como traer desde una BD, pero por el momento lo traemos desde `const noticias = [ {...}];
 
-### Clase 39 - 2022/03/10 (ver)
+### Clase 39 - 2022/03/10
+- Middleware continuacion
+- Ejemplo endpoint:
+``` javascript
+const api = express();
+api.use(corse());
+```
+- Ejemplo de middleware
+``` javascript
+api.use((request, response, next) => {
+  console.log("Entro en el mw);
+  const codigoValidador = request.query.code;
+  if(codigoValidador === "senpai"){
+    next(); //Caso existoso, codigo validador OK
+  }
+  else{
+    response.send({message: "Error, codigo invalido"});
+  }
+});
+```
+- `Logger`
 - Manejo de errores
+- `try - catch`
+- Codigos de error `HTTP`
+- Error Handler de Express
+- Como reemplazar el Error Handler de Express con un Middleware
 
-### Clase 40 - 2022/03/15 (ver y hacer quiz)
-- Formularios y archivos
+### Clase 40 - 2022/03/15 - Feature util para formulario de contacto
+- Formularios para enviar a la API de Noticias
+- `post` o `get` con metodos `http`
+- `action`
+- `enctype`
+- Modificamos `ContactPage.jsx` y `index.js`
+- En `express`, hay que usar el middleware `body-parser` que es una libreria util para recibir el contenido en el `body`
+```javascript
+const express = require('express');
+const bodyParser = require ('body-parser');
+const app = express();
 
-### Clase 41 - 2022/03/17 (ver y hacer quiz)
-- Middleware Static
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }));
+// parse application/json
+app.use(bodyParser.json());
+```
+- Componentes controlados: para que un formulario se mande pero que no recargue el sitio: Ahora pasamos a utilizar `axios`
+```
+import { useState } from "react";
+export function ContactPage() {
+  const [email, setEmail] = useState("");
+  const [mensaje, setMensaje] = useState(");
+};
+
+const handleSubmit = (event) => {
+  event.preventDefault();
+  console.log("Prevent default OK");
+};
+```
+- Ocurre que ademas hay que agregar el `onChange` en el codigo `html` llamando a una arrow function `handleEmailChange` o `handleMessageChange` para que se renderice bien el input del usuario
+- Se importa `axios` con su `api` para manejar el envio del formulario una vez completado. Usamos la funcion `const handleSubmit`
+``` javascript
+const handleSubmit = (event) => {
+  event.preventDefault();
+  //llamar 
+}
+```
+- Agregamos efecto visual de boton `enviar` para dar la sensación - al usuario - de que está ocurriendo algo por detrás. Utiliza un estado y un if ternario y utiliza una variable definida `loading`
+
+### Clase 41 - 2022/03/17
+- Manejo de archivos a enviar a `api`
+- Utilizamos un `div` de `type='file'`
+- Problema del `POST` y el envio de llaves `{}` en el payload.
+- `npm install multer` Middleware para procesar el encoding
+``` javascript
+const multer = require('multer');
+const uploadMiddleware = multer({ dest: 'upload/' });
+```
+- Reparar caso del boton CARGANDO... en caso de error 400. Utiliza el if ternario y `setLoading(true)` que era un metodo definido para eso.
+  - Se crea un contenedor `FormData()` en la UI
+- Leer `ECMA Script 6` y object destruturing
 
 ### Clase 42 - 2022/03/22 (ver y hacer quiz)
-- Routers y Debugging
+- Acceder a una imagen que fue subida a nuestra api utilizando su URL: **Middleware Static**
+```javascript
+api.get("/noticias-principales", (request, response)=> {
+  const indexRuta = __dirname + '/index.js';
+  ...
+  ...
+});
 
-### Clase 43 - 2022/03/24
--
+```
+- Libreria `path` para uso correcto de separadores de rutas
+- Logramos dejar visible un directorio accesible por los visitantes. Este directorio está hosteado en un lugar separado, no necesariamente es el mismo server - puede se una BD.
+- `response.sendFile(unPath)`
+- `response.download()`
+- Repasar dinamica de `module.export` y `require`
+- Para dejar visible una carpeta completa:
+```javascript
+app.use(express.static(path.join(__dirname, "public")));
+```
 
-### Clase 44 - 2022/03/29
-- 
+### Clase 43 - 2022/03/24 (ver y hacer quiz)
+- Routers
+- Buenas practicas para definir y normalizar endpoints de una `REST API`
+- Definir en `src/routers/` los diferentes archivos relacionados
+  - `noticias.router.js`
+  - `comentarios.router.js`
+- Hay que exportar estos modulos para que se los pueda requerir. Para esto:
+`module.exports = noticiasRouter;`
+- Limpiamos `index.js` y cargamos los `MW` en `src/middlewares` llevando las require como file system
+- Debugging: ejemplo usando `VSCode Run & Debug` 
 
 ## Modulo 6: Base de datos (MongoDB & PostgreSQL)
+
+### Clase 44 - 2022/03/29
+
+### Clase 45 - 2022/03/31
+
+### Clase 46 - 2022/04/05
+
+### Clase 47 - 2022/04/07
+
+### Clase 48 - 2022/04/12
 
 #
 # Puntaje quizzes:
@@ -546,9 +670,13 @@ Y se puede visitar en localhost, puerto `4000`:
 37. 3 pts 03/03/2022
 38. 3 pts 08/03/2022 hecha a destiempo
 39. 3 pts 10/03/2022 hecha a destiempo
-40. hacer 15/03/2022
+40. 2 pts 15/03/2022 hecha a destiempo
+41. 3 pts 17/03/2022 hecha a destiempo
+42. 3 pts 22/03/2022 hecha a destiempo
+43. 3 pts 24/03/2022 hecha a destiempo
 
 ## Modulo 5
+
 
 #
 # Ideas proyecto final:

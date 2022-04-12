@@ -610,9 +610,20 @@ app.use(express.static(path.join(__dirname, "public")));
 - Limpiamos `index.js` y cargamos los `MW` en `src/middlewares` llevando las require como file system
 - Debugging: ejemplo usando `VSCode Run & Debug` 
 
-## Modulo 6: Base de datos (MongoDB & PostgreSQL)
-
 ### Clase 44 - 2022/03/29
+- Importancia del `module.export`
+- Importancia del middleware para `404 - Not Found`
+- Separacion  de los middlewares en diferentes archivos
+- Repaso debbuging y middleware `logger.middleware.js`
+- Autenticacion `JWT - JSON Web Token`
+- Router de autenticacion
+``` javascript  
+api.use("/auth", /authRouter);
+```
+- Ejemplo de login con usuario y contraseña
+
+
+## Modulo 6: Base de datos (MongoDB & PostgreSQL)
 
 ### Clase 45 - 2022/03/31
 
@@ -631,7 +642,7 @@ app.use(express.static(path.join(__dirname, "public")));
 4. 3 pts
 5. 3 pts
 6. 3 pts
-7.
+7. ? pts
 8. 2 pts
 9. 3 pts
 10. 3 pts
@@ -644,7 +655,7 @@ app.use(express.static(path.join(__dirname, "public")));
 15. 3 pts
 16. 3 pts
 17. 3 pts
-18.
+18. ? pts
 19. 3 pts 30/11/2021 
 20. 3 pts 02/12/2021
 21. 3 pts 07/12/2021
@@ -674,6 +685,7 @@ app.use(express.static(path.join(__dirname, "public")));
 41. 3 pts 17/03/2022 hecha a destiempo
 42. 3 pts 22/03/2022 hecha a destiempo
 43. 3 pts 24/03/2022 hecha a destiempo
+44. 3 pts 29/03/2022 hecha a destiempo
 
 ## Modulo 5
 

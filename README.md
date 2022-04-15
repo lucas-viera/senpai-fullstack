@@ -709,7 +709,14 @@ DELETE * FROM usuarios WHERE edad > 18;
 ```
 
 ### Clase 47 - 2022/04/07
-- 
+- Restricciones para las BD
+- Usar `VARCHAR (n)` para limitar cantidad de caracteres
+- Usar `NOT NULL` para forzar que no esté vacío
+- Para implementar el uso de `IDs` que se autoincremente y se utilice como clave primaria 
+```sql
+id BIGSERIAL NOT NULL PRIMARY KEY
+```
+- `AND`, `OR`,  `IN`, etc
 
 ### Clase 48 - 2022/04/12
 - Retoma trabajando con `PGAdmin`
@@ -791,9 +798,9 @@ require('dotenv').config({
 ## Modulo 5
 
 46. 3 pts 05/04/2022 hecha a destiempo
-47. pts 07/04/2022 hecha a destiempo
+47. 3 pts 07/04/2022 hecha a destiempo
 48. 3 pts 12/04/2022
-
+49. 
 
 <br />
 

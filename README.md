@@ -1,3 +1,4 @@
+
 # FullStack developer - Senpai Academy
 
 Docente: Gustavo Rodriguez
@@ -9,13 +10,21 @@ Docente: Gustavo Rodriguez
 5. Node.js + Express
 6. MongoDB & PostgreSQL
 
-#
+
+<br />
+
+---
+
 # Fechas de entregas
 1.  07 - noviembre - 2021 | Puntaje 100%
-2.  13 - febrero - 2022 | Puntaje 
-3.  17 - abril - 2022 | Puntaje
+2.  13 - febrero - 2022 | Puntaje 100%
+3.  24 - abril - 2022 | Puntaje
 
-#
+
+<br />
+
+---
+
 # Clases
 
 ## Modulo 1: Introducción y nivelación
@@ -23,6 +32,11 @@ Docente: Gustavo Rodriguez
 - Intro a programacion.
 - Frontend, backend, servidor, base de datos.
 - Github
+
+
+<br />
+
+---
 
 ## Modulo 2: HTML & CSS
 ### Clase 2
@@ -67,6 +81,11 @@ Docente: Gustavo Rodriguez
 - Pseudoclases: hover, active, focus, focus-within, target, visited, focus-visible, checked y +40
 - Transiciones: transition, transition-duration, transition-timing-function, transition-delay
 - Selectores
+
+
+<br />
+
+---
 
 ## Modulo 3: JavaScript
 
@@ -189,6 +208,10 @@ Docente: Gustavo Rodriguez
 --- `Index.css`
 --- `Index.js`
 
+<br />
+
+---
+
 ## Modulo 4: React JS
 
 ### Clase 27 - 2022/01/18
@@ -275,6 +298,10 @@ Docente: Gustavo Rodriguez
 - Estilos de `Bootstrap`
 - Lectura de `db.json` informacion de Blogs usando `Axios`
 - Introduccion Node.js
+
+<br />
+
+---
 
 ## Modulo 5: Node.js + Express
 
@@ -623,17 +650,90 @@ api.use("/auth", /authRouter);
 - Ejemplo de login con usuario y contraseña
 
 
+### Clase 45 - 2022/03/31
+- Logica de login con usuario y contraseña
+- Utilizacion de `auth.router.js`
+```javascript
+authRouter.post("/login", async (request, response) => {
+  const email = request.body.email;
+  const password = reques.body.password;
+
+  const usuario = usuairos.find((usuarioBD) => {
+    return suaurioBD.email === email;
+  });
+  ...
+
+});
+```
+- Uso `JWT` en `auth.router.js`
+```javascript
+const token = jwt.sign(
+  {
+  email: usuario.email,
+  },
+  JWT_SECRET
+);
+```
+
+<br />
+
+---
+
 ## Modulo 6: Base de datos (MongoDB & PostgreSQL)
 
-### Clase 45 - 2022/03/31
-
 ### Clase 46 - 2022/04/05
+- Base de datos. Teorico introduccion
+- Ejemplo excel
+- Postgress 
+- Tabla de `Usuarios`
+- Crear una tabla para la **Entrega 3** en archivo `consultas.sql`
+```sql
+CREATE TABLE noticias (
+  id integer,
+  titulo text,
+  descripcion text
+) 
+
+CREATE TABLE productos (
+  id integer,
+  nombre text,
+  precio double,
+  descripcion text
+)
+
+ALTER TABLE productos ADD vencimiento datetime
+
+DROP TABLE contents;
+
+DELETE * FROM usuarios WHERE edad > 18; 
+```
 
 ### Clase 47 - 2022/04/07
+- 
 
 ### Clase 48 - 2022/04/12
+- Retoma trabajando con `PGAdmin`
+- Controlador para conectarnos usando `Node Posgres` mediante ``npm install pg`
+- Uso de variables de entorno para datos sensibles que no pueden almacenarse a simplevista en el repositorio.
+- Libreria `dotenv`
+```yaml
+npm install dotenv
+```
+```javascript
+require('dotenv').config();
+```
+- Utilizacion del archivo `.env` (no olvidar agregarlo al `.gitignore`) y dejar un `.env.sample` visible para que sea completado luego de clonar el repositorio.
+- El path de `.env` es el root del proyecto por defecto. En caso contrario, se debe pasar un objeto `path` a lo siguiente:
+```javascript
+require('dotenv').config({
+  path = ... ;
+});
+```
 
-#
+<br />
+
+---
+
 # Puntaje quizzes:
 ## Modulo 1
 1. 3 pts
@@ -686,11 +786,19 @@ api.use("/auth", /authRouter);
 42. 3 pts 22/03/2022 hecha a destiempo
 43. 3 pts 24/03/2022 hecha a destiempo
 44. 3 pts 29/03/2022 hecha a destiempo
+45. 2 pts 31/03/2022 hecha a destiempo
 
 ## Modulo 5
 
+46. 3 pts 05/04/2022 hecha a destiempo
+47. pts 07/04/2022 hecha a destiempo
+48. 3 pts 12/04/2022
 
-#
+
+<br />
+
+---
+
 # Ideas proyecto final:
 - **Web personal**
 - Registros de gastos / listado de gastos

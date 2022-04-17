@@ -531,7 +531,7 @@ app.get('/contacto', function (request, response) {
 - Ejemplo endpoint:
 ``` javascript
 const api = express();
-api.use(corse());
+api.use(cors());
 ```
 - Ejemplo de middleware
 ``` javascript
